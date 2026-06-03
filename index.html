@@ -272,6 +272,26 @@
         clear: both
     }/*# sourceURL=http://designbycarlo/wp-includes/blocks/spacer/style.min.css */
     </style>
+    <style id="wp-block-icon-inline-css">
+    .wp-block-icon {
+        line-height:0
+    }
+
+    .wp-block-icon.aligncenter {
+        display: flex;
+        justify-content:center
+    }
+
+    .wp-block-icon svg {
+        fill: currentColor;
+        box-sizing:border-box
+    }
+
+    :where(.wp-block-icon) svg {
+        height: 100%;
+        width: 100%
+    }/*# sourceURL=http://designbycarlo/wp-includes/blocks/icon/style.min.css */
+    </style>
     <style id="wp-block-post-content-inline-css">
     .wp-block-post-content {
         display: flow-root
@@ -1132,6 +1152,10 @@
         font-family: var(--wp--preset--font-family--geist-mono) !important;
     }
 
+    :root :where(.wp-block-icon svg) {
+        width: 24px;
+    }
+
     :root :where(.wp-block-columns) {
         margin-top: 0;
         margin-bottom: 0;
@@ -1521,7 +1545,7 @@
     }/*# sourceURL=wp-emoji-styles-inline-css */
     </style>
     <style id="core-block-supports-inline-css">
-    .wp-elements-53915fcd8911c19c9c5c7ac513c4f543 a:where(:not(.wp-element-button)) {
+    .wp-elements-e74edbd00511e05e2d933c35521d06c8 a:where(:not(.wp-element-button)) {
         color: var(--wp--preset--color--base);
     }
 
@@ -1626,10 +1650,16 @@
         }
     }
 
-    .wp-container-core-group-is-layout-8a84afba {
+    .wp-container-core-group-is-layout-6073f33e {
         grid-template-columns: repeat(auto-fill, minmax(min(8rem, 100%), 1fr));
         container-type: inline-size;
         gap: var(--wp--preset--spacing--20);
+    }
+
+    .wp-container-core-group-is-layout-a939c3ef {
+        flex-wrap: nowrap;
+        gap: var(--wp--preset--spacing--20);
+        justify-content: center;
     }
 
     .wp-container-core-column-is-layout-737a2572 > .alignfull {
@@ -1817,12 +1847,12 @@
             <div class="wp-block-columns are-vertically-aligned-center is-style-default has-roboto-font-family has-medium-font-size is-layout-flex wp-container-core-columns-is-layout-f682fa6c wp-block-columns-is-layout-flex" style="border-style:none;border-width:0px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">
                 <div class="wp-block-column is-vertically-aligned-center has-global-padding is-layout-constrained wp-container-core-column-is-layout-d604e8c6 wp-block-column-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
                     <div class="wp-block-group is-content-justification-left is-layout-flex wp-container-core-group-is-layout-22b59871 wp-block-group-is-layout-flex">
-                        <figure class="wp-block-image size-large is-resized has-custom-border" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">
-                            <img decoding="async" src="https://img.magnific.com/premium-vector/man-empty-avatar-casual-business-style-vector-photo-placeholder-social-networks-resumes_885953-434.jpg?semt=ais_hybrid&amp;w=740&amp;q=80" alt="" style="border-style:none;border-width:0px;border-top-left-radius:100px;border-top-right-radius:100px;border-bottom-left-radius:100px;border-bottom-right-radius:100px;object-fit:cover;object-position:49% 42%;width:100px;height:100px">
+                        <figure class="wp-block-image size-full is-resized has-custom-border" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">
+                            <img fetchpriority="high" decoding="async" width="326" height="416" src="http://designbycarlo/wp-content/uploads/2026/06/Carlo-Profile_Casual.jpg" alt="" class="wp-image-240" style="border-style:none;border-width:0px;border-top-left-radius:100px;border-top-right-radius:100px;border-bottom-left-radius:100px;border-bottom-right-radius:100px;object-fit:cover;object-position:49% 42%;width:100px;height:100px" srcset="http://designbycarlo/wp-content/uploads/2026/06/Carlo-Profile_Casual.jpg 326w, http://designbycarlo/wp-content/uploads/2026/06/Carlo-Profile_Casual-235x300.jpg 235w" sizes="(max-width: 326px) 100vw, 326px">
                         </figure>
 
                         <div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                            <h1 class="wp-block-heading is-style-text-display has-base-color has-text-color has-link-color has-geist-font-family wp-elements-53915fcd8911c19c9c5c7ac513c4f543 is-style-text-display--1" style="font-size:clamp(28.836px, 1.802rem + ((1vw - 3.2px) * 2.075), 50px);font-style:normal;font-weight:500;line-height:0.9">
+                            <h1 class="wp-block-heading is-style-text-display has-base-color has-text-color has-link-color has-geist-font-family wp-elements-e74edbd00511e05e2d933c35521d06c8 is-style-text-display--1" style="font-size:clamp(33.419px, 2.089rem + ((1vw - 3.2px) * 2.606), 60px);font-style:normal;font-weight:500;line-height:0.9">
                                 Carlo
                                 <strong></strong>
                                 <br>
@@ -1914,7 +1944,7 @@
                             <div class="wp-block-column is-vertically-aligned-top has-global-padding is-content-justification-left is-layout-constrained wp-container-core-column-is-layout-737a2572 wp-block-column-is-layout-constrained" style="border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;flex-basis:300px">
                                 <h4 class="wp-block-heading has-geist-font-family has-medium-font-size" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20)">Skills</h4>
 
-                                <div class="wp-block-group is-layout-grid wp-container-core-group-is-layout-8a84afba wp-block-group-is-layout-grid" style="margin-top:0;margin-bottom:0">
+                                <div class="wp-block-group is-layout-grid wp-container-core-group-is-layout-6073f33e wp-block-group-is-layout-grid" style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0">
                                     <p class="is-style-text-annotation has-geist-mono-font-family has-small-font-size is-style-text-annotation--6 wp-block-paragraph" style="line-height:1.6">User Experience</p>
 
                                     <p class="is-style-text-annotation has-geist-mono-font-family has-small-font-size is-style-text-annotation--7 wp-block-paragraph" style="line-height:1.6">Interface Design</p>
@@ -1936,6 +1966,20 @@
                                     <p class="is-style-text-annotation has-geist-mono-font-family has-small-font-size wp-container-content-65aae1f9 is-style-text-annotation--15 wp-block-paragraph" style="line-height:1.6">Typescript</p>
 
                                     <p class="is-style-text-annotation has-geist-mono-font-family has-small-font-size wp-container-content-65aae1f9 is-style-text-annotation--16 wp-block-paragraph" style="line-height:1.6">Javascript</p>
+                                </div>
+
+                                <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+                                <div class="wp-block-group is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-a939c3ef wp-block-group-is-layout-flex" style="border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;min-height:0px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">
+                                    <div class="wp-block-icon">
+                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M6 5V18.5911L12 13.8473L18 18.5911V5H6Z"></path>
+                                        </svg>
+                                    </div>
+
+                                    <p class="is-style-default has-geist-mono-font-family has-small-font-size wp-block-paragraph" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;text-indent:0px">
+                                        <a href="https://photos.app.goo.gl/njywT5LB8tUFNGSH8" data-type="link" data-id="https://photos.google.com/share/AF1QipP9lkh_GU1GGHkLGVBLppXIazlspy4L-BXYBH2C7c2eCFZ7YLUC59pD3V_sH-db8w?key=bXNtVmstSkE1TWdqQ1V0NDFBRWZfd1oyN2pnUnlB" target="_blank" rel="noreferrer noopener">Curated Works /Portfolio</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
