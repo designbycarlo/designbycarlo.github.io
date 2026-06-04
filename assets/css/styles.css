@@ -1,0 +1,48 @@
+/* name=assets/css/styles.css
+   Purpose: Minimal, readable stylesheet to replace heavy inline WP CSS.
+*/
+
+/* Reset / base */
+* { box-sizing: border-box; }
+html,body{height:100%;margin:0;padding:0;font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#111; background:#fff; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+img{max-width:100%;height:auto;display:block;}
+a{color:#7a00df;text-decoration:underline;}
+a[rel~="external"]{text-decoration:underline;}
+.container{max-width:980px;margin:0 auto;padding:28px;}
+
+/* Accessibility: visible focus */
+:focus{outline:3px solid rgba(122,0,223,0.18);outline-offset:4px;}
+
+/* Header / layout */
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:8px;border-bottom:1px solid #eee;}
+header h1{font-size:1.25rem;margin:0;}
+.tagline{margin:4px 0 0;color:#444;font-size:0.95rem;}
+
+/* Grid */
+.grid{display:grid;grid-template-columns:1fr 320px;gap:28px;margin-top:20px;}
+@media (max-width:900px){ .grid{grid-template-columns:1fr; } }
+
+/* Profile image */
+.profile{width:128px;height:128px;border-radius:8px;object-fit:cover;}
+
+/* Headings and sections */
+h2{font-size:1.125rem;margin:0 0 8px;color:#222;}
+h3{font-size:1rem;margin:12px 0 8px;color:#333;}
+section{margin-bottom:20px;}
+
+/* Aside / skill list */
+aside ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2, minmax(0,1fr));gap:6px;}
+aside li{background:#f8f8fb;padding:6px 8px;border-radius:6px;font-size:0.95rem;color:#222;}
+
+/* Footer */
+footer{border-top:1px solid #eee;padding-top:12px;color:#666;font-size:0.9rem;text-align:center;}
+
+/* Utilities */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.row{display:flex;gap:16px;align-items:center;}
+
+/* Small screen tweaks */
+@media (max-width:420px){
+  .container{padding:16px;}
+  aside ul{grid-template-columns:1fr;}
+}
