@@ -6,7 +6,7 @@ I'm a web designer and developer passionate about creating beautiful, functional
 
 ## 🛠️ Tech Stack
 - **Frontend:** HTML, CSS, JavaScript
-- **Tools:** VSCode, Git, Figma, Wordpress, Gutenberg, Elementor, Divi
+- **Tools:** VSCode, Git, Figma, Wordpress, Gutenberg, Elementor, Divi...
 
 ## 📁 Featured Projects
 - [Project Name](link) - Brief description
