@@ -9,7 +9,7 @@ I'm a web designer and developer passionate about creating beautiful, functional
 - **Tools:** VSCode, Git, Figma, Wordpress, Gutenberg, Elementor, Divi...
 
 ## 📁 Featured Projects
-- [MC Garmin FR55 Clock](https://github.com/designbycarlo/mc-garmin-fr55-clock) - A custom clock widget for Garmin FR55 smartwatch
+- [MC Garmin FR55 Clock](https://github.com/designbycarlo/mc-garmin-fr55-clock) - A clean, dark high-contrast minimalist watch face tailored for Garmin memory-in-pixel (MIP) displays
 - [Project Name](link) - Brief description
 
 ## 📫 Get in Touch
