@@ -13,20 +13,21 @@
 <body class="bg-zinc-50 text-zinc-900 antialiased font-sans selection:bg-zinc-200 selection:text-zinc-900">
 
 	<header class="sticky top-0 z-50 backdrop-blur-md bg-zinc-50/80 border-b border-zinc-200/80">
-		<div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-			<a href="#" class="font-semibold tracking-tight text-zinc-900 hover:text-zinc-600 transition-colors">
+		<div
+			class="max-w-4xl mx-auto px-6 py-4 sm:py-3 flex flex-col sm:flex-row items-start sm:items-center justify-start sm:justify-between gap-6 sm:gap-4">
+			<a href="#" class="py-2 font-semibold tracking-tight text-zinc-900 hover:text-zinc-600 transition-colors">
 				designbycarlo
 			</a>
-			<nav class="flex items-center gap-6 text-sm font-medium text-zinc-600">
-				<a href="#about" class="hover:text-zinc-900 transition-colors">About</a>
-				<a href="#projects" class="hover:text-zinc-900 transition-colors">Projects</a>
-				<a href="#skills" class="hover:text-zinc-900 transition-colors">Skills</a>
-				<a href="#contact" class="hover:text-zinc-900 transition-colors">Contact</a>
+			<nav class="flex items-center sm:justify-start gap-4 sm:gap-6 text-sm font-medium text-zinc-600">
+				<a href="#about" class="px-3 py-2 hover:text-zinc-900 transition-colors">About</a>
+				<a href="#projects" class="px-3 py-2 hover:text-zinc-900 transition-colors">Projects</a>
+				<a href="#skills" class="px-3 py-2 hover:text-zinc-900 transition-colors">Skills</a>
+				<a href="#contact" class="px-3 py-2 hover:text-zinc-900 transition-colors">Contact</a>
 			</nav>
 		</div>
 	</header>
 
-	<main class="max-w-4xl mx-auto px-6 py-20 space-y-24">
+	<main class="max-w-4xl mx-auto px-6 py-[20px] lg:py-[30px] space-y-24">
 
 		<section id="about" class="space-y-6 pt-6">
 			<div
@@ -165,10 +166,6 @@
 	<footer class="border-t border-zinc-200 bg-zinc-50 text-zinc-400 text-xs py-12">
 		<div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
 			<p>&copy; <span id="year"></span> designbycarlo. All rights reserved.</p>
-			<p class="flex items-center gap-1">
-				Built with <a href="https://tailwindcss.com" target="_blank" rel="noreferrer"
-					class="text-zinc-600 hover:underline font-medium">Tailwind CSS</a>
-			</p>
 		</div>
 	</footer>
 
