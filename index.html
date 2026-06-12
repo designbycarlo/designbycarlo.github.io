@@ -8,6 +8,22 @@
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 	<link rel="icon"
 		href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+	<script>
+		// Execute theme check immediately to prevent FOUC (Flash of Unstyled Content)
+		if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			document.documentElement.classList.add('dark');
+		} else {
+			document.documentElement.classList.remove('dark');
+		}
+	</script>
+	<style type="text/tailwindcss">
+		/* Configure Tailwind v4 to use the .dark class for dark mode */
+		@variant dark (&:where(.dark, .dark *));
+
+		@layer base {
+			/* Global transitions removed to fix performance and layout flickering */
+		}
+	</style>
 </head>
 
 <body
@@ -21,11 +37,16 @@
 				class="py-2 font-semibold tracking-tight text-zinc-900 hover:text-zinc-600 transition-colors dark:text-white dark:hover:text-zinc-400">
 				designbycarlo
 			</a>
-			<nav class="flex items-center sm:justify-start gap-2 sm:gap-6 text-sm font-medium text-zinc-600">
-				<a href="#about" class="px-2 sm:px-3 py-2 hover:text-zinc-900 transition-colors">About</a>
-				<a href="#projects" class="px-2 sm:px-3 py-2 hover:text-zinc-900 transition-colors">Projects</a>
-				<a href="#skills" class="px-2 sm:px-3 py-2 hover:text-zinc-900 transition-colors">Skills</a>
-				<a href="#contact" class="px-2 sm:px-3 py-2 hover:text-zinc-900 transition-colors">Contact</a>
+			<nav
+				class="flex items-center sm:justify-start gap-2 sm:gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+				<a href="#about"
+					class="px-2 sm:px-3 py-2 hover:text-zinc-900 dark:hover:text-white transition-colors">About</a>
+				<a href="#projects"
+					class="px-2 sm:px-3 py-2 hover:text-zinc-900 dark:hover:text-white transition-colors">Projects</a>
+				<a href="#skills"
+					class="px-2 sm:px-3 py-2 hover:text-zinc-900 dark:hover:text-white transition-colors">Skills</a>
+				<a href="#contact"
+					class="px-2 sm:px-3 py-2 hover:text-zinc-900 dark:hover:text-white transition-colors">Contact</a>
 				<button id="theme-toggle"
 					class="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
 					aria-label="Toggle Dark Mode">
@@ -64,7 +85,7 @@
 					Get in touch
 				</a>
 				<a href="https://github.com/designbycarlo" target="_blank" rel="noreferrer"
-					class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 rounded-lg transition-all">
+					class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:text-white dark:hover:bg-zinc-900 rounded-lg transition-all">
 					View GitHub →
 				</a>
 			</div>
@@ -92,7 +113,7 @@
 						</p>
 					</div>
 					<div
-						class="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between text-xs text-zinc-400">
+						class="mt-6 pt-4 border-t border-zinc-100/80 dark:border-zinc-800/80 flex items-center justify-between text-xs text-zinc-400">
 						<span>Garmin Connect IQ • Monkey C</span>
 						<a href="https://github.com/designbycarlo/mc-garmin-fr55-clock" target="_blank" rel="noreferrer"
 							class="text-zinc-900 dark:text-zinc-100 font-medium group-hover:translate-x-1 transition-transform">View
@@ -115,7 +136,7 @@
 						</p>
 					</div>
 					<div
-						class="mt-6 pt-4 border-t border-zinc-100 flex items-center justify-between text-xs text-zinc-400">
+						class="mt-6 pt-4 border-t border-zinc-100/80 dark:border-zinc-800/80 flex items-center justify-between text-xs text-zinc-400">
 						<span>React • Next.js</span>
 						<a href="https://github.com/designbycarlo" target="_blank" rel="noreferrer"
 							class="text-zinc-900 dark:text-zinc-100 font-medium group-hover:translate-x-1 transition-transform">View
@@ -171,7 +192,7 @@
 					LinkedIn ↗
 				</a>
 				<a href="https://x.com/designbycarlo" target="_blank" rel="noreferrer"
-					class="inline-flex items-center justify-center sm:justify-start gap-2 px-4 py-2.5 bg-zinc-100 hover:bg-zinc-200 text-zinc-900 rounded-xl transition-colors">
+					class="inline-flex items-center justify-center sm:justify-start gap-2 px-4 py-2.5 bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 text-zinc-900 dark:text-zinc-100 rounded-xl transition-colors">
 					Twitter ↗
 				</a>
 			</div>
@@ -194,12 +215,10 @@
 		const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 		const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
-		// Initialize theme based on preference
-		if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-			document.documentElement.classList.add('dark');
+		// Update toggle icons based on current theme state
+		if (document.documentElement.classList.contains('dark')) {
 			themeToggleLightIcon.classList.remove('hidden');
 		} else {
-			document.documentElement.classList.remove('dark');
 			themeToggleDarkIcon.classList.remove('hidden');
 		}
 
