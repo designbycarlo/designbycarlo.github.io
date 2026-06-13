@@ -23,6 +23,10 @@
 		@layer base {
 			/* Global transitions removed to fix performance and layout flickering */
 		}
+
+		/* Hide scrollbar for gallery while keeping functionality */
+		.hide-scrollbar::-webkit-scrollbar { display: none; }
+		.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 	</style>
 </head>
 
@@ -97,9 +101,9 @@
 				<p class="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">Featured Projects</p>
 			</div>
 
-			<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+			<div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 hide-scrollbar">
 				<div
-					class="group relative p-6 bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200/80 dark:border-zinc-800 shadow-xs hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-300 flex flex-col justify-between">
+					class="group relative p-6 bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200/80 dark:border-zinc-800 shadow-xs hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-300 flex flex-col justify-between shrink-0 w-[85%] sm:w-[calc(50%-12px)] snap-start">
 					<div>
 						<a href="https://github.com/designbycarlo/mc-garmin-fr55-clock" target="_blank" rel="noreferrer"
 							class="w-10 h-10 rounded-lg bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center text-zinc-700 dark:text-zinc-300 font-mono text-sm mb-4 group-hover:bg-zinc-950 group-hover:text-white dark:group-hover:bg-zinc-100 dark:group-hover:text-zinc-950 transition-colors duration-300">
@@ -108,8 +112,8 @@
 						</a>
 						<h3 class="font-semibold text-zinc-900 dark:text-white text-base">MC Garmin FR55 Clock</h3>
 						<p class="mt-2 text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
-							A clean, dark high-contrast minimalist watch face tailored for Garmin memory-in-pixel (MIP)
-							displays.
+							A clean, minimalist watch face and base template tailored for Garmin memory-in-pixel (MIP)
+							displays, engineered with an ambient ultra-battery-saver mode for the Forerunner 55.
 						</p>
 					</div>
 					<div
@@ -123,7 +127,7 @@
 				</div>
 
 				<div
-					class="group relative p-6 bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200/80 dark:border-zinc-800 shadow-xs hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-300 flex flex-col justify-between">
+					class="group relative p-6 bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200/80 dark:border-zinc-800 shadow-xs hover:shadow-md hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-300 flex flex-col justify-between shrink-0 w-[85%] sm:w-[calc(50%-12px)] snap-start">
 					<div>
 						<div
 							class="w-10 h-10 rounded-lg bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center text-zinc-700 dark:text-zinc-300 font-mono text-sm mb-4 group-hover:bg-zinc-950 group-hover:text-white dark:group-hover:bg-zinc-100 dark:group-hover:text-zinc-950 transition-colors duration-300">
