@@ -10,7 +10,7 @@ I'm a web designer and developer passionate about creating beautiful, functional
 
 ## 📁 Featured Projects
 - [MC Garmin FR55 Clock](https://github.com/designbycarlo/mc-garmin-fr55-clock) - A clean, dark high-contrast minimalist watch face tailored for Garmin memory-in-pixel (MIP) displays
-- [Project Beta](https://github.com/designbycarlo) - An open-source Markdown parser that generates seamless UI components.
+- [RunReady Running App](https://github.com/designbycarlo/runready) - An intelligent web app providing real-time running recommendations based on localized weather status
 
 ## 📫 Get in Touch
 - **Portfolio:** [designbycarlo.github.io](https://designbycarlo.github.io)
