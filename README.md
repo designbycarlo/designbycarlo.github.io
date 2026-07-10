@@ -12,9 +12,12 @@ I'm a web designer and developer passionate about creating beautiful, functional
 - **Workflow:** Agile Task Management (via GitHub Projects)
 
 ## 📁 Featured Projects
-- [SprintFlow](https://github.com/designbycarlo/sprint-flow) - A streamlined workflow tool designed to boost productivity and optimize task management for agile teams.
-- [RunReady Running App](https://github.com/designbycarlo/runready) - An intelligent web app providing real-time running recommendations based on localized weather status
-- [MC Garmin FR55 Clock](https://github.com/designbycarlo/mc-garmin-fr55-clock) - A clean, dark high-contrast minimalist watch face tailored for Garmin memory-in-pixel (MIP) displays
+<!-- README_PROJECTS_START -->
+- [MC Garmin FR55 Clock](https://github.com/designbycarlo/mc-garmin-fr55-clock) - A clean, minimalist watch face and base template tailored for Garmin memory-in-pixel (MIP) displays, engineered with an ambient ultra-battery-saver mode for the Forerunner 55.
+- [RunReady Running App](https://github.com/designbycarlo/runready) - An intelligent running companion providing real-time weather-based recommendations via geolocation, ensuring athlete safety and performance with a data-driven UI.
+- [Sprint Flow Kanban Board](https://github.com/designbycarlo/sprint-flow) - A project management Kanban board with drag-and-drop, auth, dark mode, and persistent data via Supabase — keeping your sprint on track with PostgreSQL and Next.js.
+- [Hz Audio Visualizer](https://github.com/designbycarlo/Hz) - A real-time audio frequency visualizer that maps sound into kinetic, responsive graphics with the Web Audio API, blending interactive design and signal-driven animation.
+<!-- README_PROJECTS_END -->
 
 ## 📫 Get in Touch
 - **Portfolio:** [designbycarlo.github.io](https://designbycarlo.github.io)
