@@ -5,18 +5,25 @@ Painting the web with HTML, CSS, and JavaScript.
 I'm a web designer and developer passionate about creating beautiful, functional digital experiences. This repository is my portfolio showcase.
 
 ## 🛠️ Tech Stack
-- **Languages:** HTML5, CSS3, JavaScript
-- **Frontend Frameworks & Styling:** Tailwind CSS
-- **Tools:** VSCode, Git, GitHub, Figma, Netlify, Vercel
-- **CMS & Builders:** WordPress (Gutenberg, Elementor, Divi)
-- **Workflow:** Agile Task Management (via GitHub Projects)
+- **Languages:** HTML5, CSS3, JavaScript, TypeScript
+- **Frameworks:** Next.js, React
+- **Styling:** Tailwind CSS, CSS Modules
+- **Database & Auth:** Supabase, PostgreSQL
+- **AI / LLM:** Vercel AI SDK, OpenRouter
+- **State Management:** Zustand
+- **Validation:** Zod
+- **Libraries:** @dnd-kit, Lucide React, Geolocation API
+- **Platforms:** Vercel, Netlify, GitHub Pages
+- **Tools:** VS Code, Git, GitHub, Figma, ESLint
+- **CMS:** WordPress (Gutenberg, Elementor, Divi)
+- **Wearables:** Garmin Connect IQ, Monkey C
 
 ## 📁 Featured Projects
 <!-- README_PROJECTS_START -->
-- [MC Garmin FR55 Clock](https://github.com/designbycarlo/mc-garmin-fr55-clock) - A clean, minimalist watch face and base template tailored for Garmin memory-in-pixel (MIP) displays, engineered with an ambient ultra-battery-saver mode for the Forerunner 55.
-- [RunReady Running App](https://github.com/designbycarlo/runready) - An intelligent running companion providing real-time weather-based recommendations via geolocation, ensuring athlete safety and performance with a data-driven UI.
-- [Sprint Flow Kanban Board](https://github.com/designbycarlo/sprint-flow) - A project management Kanban board with drag-and-drop, auth, dark mode, and persistent data via Supabase — keeping your sprint on track with PostgreSQL and Next.js.
-- [Hz Audio Visualizer](https://github.com/designbycarlo/Hz) - A real-time audio frequency visualizer that maps sound into kinetic, responsive graphics with the Web Audio API, blending interactive design and signal-driven animation.
+- [Hz Radio](https://github.com/designbycarlo/Hz) - A modern, polished web radio app built with Next.js 15, React 19, and Zustand. Discover and stream stations worldwide with smart auto-scan playback, geolocation discovery, and persistent favorites.
+- [Sprint Flow Kanban Board](https://github.com/designbycarlo/sprint-flow) - Drag. Drop. Done. A Kanban board with smooth @dnd-kit drag-and-drop, Supabase auth, PostgreSQL persistence with RLS, and full dark mode — keeping your sprint on track.
+- [RunReady Running App](https://github.com/designbycarlo/runready) - An intelligent running companion with an AI coach (Vercel AI SDK via OpenRouter) that delivers real-time, weather-aware verdicts from geolocation — Optimal, Caution, or Avoid.
+- [MC Garmin FR55 Clock](https://github.com/designbycarlo/mc-garmin-fr55-clock) - A clean, dark high-contrast minimalist watch face for Garmin MIP displays, with ultra-large time, battery status, and an ambient sleep mode for maximum battery endurance.
 <!-- README_PROJECTS_END -->
 
 ## 📫 Get in Touch
