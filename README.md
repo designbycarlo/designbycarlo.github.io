@@ -13,6 +13,7 @@ I'm a web designer and developer passionate about creating beautiful, functional
 
 ## 📁 Featured Projects
 <!-- README_PROJECTS_START -->
+- [AuraChat](https://github.com/designbycarlo/aurachat) - A lightweight AI SEO / AEO analyzer that scores any page for AI-search readiness — Google AI Overview, Perplexity, and ChatGPT Search — with a clear grade and prioritized fixes.
 - [Hz Radio](https://github.com/designbycarlo/Hz) - A modern, polished web radio app built with Next.js 15, React 19, and Zustand. Discover and stream stations worldwide with smart auto-scan playback, geolocation discovery, and persistent favorites.
 - [Sprint Flow Kanban Board](https://github.com/designbycarlo/sprint-flow) - Drag. Drop. Done. A Kanban board with smooth @dnd-kit drag-and-drop, Supabase auth, PostgreSQL persistence with RLS, and full dark mode — keeping your sprint on track.
 - [RunReady Running App](https://github.com/designbycarlo/runready) - An intelligent running companion with an AI coach (Vercel AI SDK via OpenRouter) that delivers real-time, weather-aware verdicts from geolocation — Optimal, Caution, or Avoid.
