@@ -5,11 +5,18 @@ Painting the web with HTML, CSS, and JavaScript.
 I'm a web designer and developer passionate about creating beautiful, functional digital experiences. This repository is my portfolio showcase.
 
 ## 🛠️ Tech Stack
-- **Languages:** HTML5, CSS3, JavaScript
-- **Frontend Frameworks & Styling:** Tailwind CSS
-- **Tools:** VSCode, Git, GitHub, Figma, Netlify, Vercel
-- **CMS & Builders:** WordPress (Gutenberg, Elementor, Divi)
-- **Workflow:** Agile Task Management (via GitHub Projects)
+- **Languages:** HTML5, CSS3, JavaScript, TypeScript
+- **Frameworks:** Next.js, React
+- **Styling:** Tailwind CSS, CSS Modules
+- **Database & Auth:** Supabase, PostgreSQL
+- **AI / LLM:** Vercel AI SDK, OpenRouter
+- **State Management:** Zustand
+- **Validation:** Zod
+- **Libraries:** @dnd-kit, Lucide React, Geolocation API
+- **Platforms:** Vercel, Netlify, GitHub Pages
+- **Tools:** VS Code, Git, GitHub, Figma, ESLint
+- **CMS:** WordPress (Gutenberg, Elementor, Divi)
+- **Wearables:** Garmin Connect IQ, Monkey C
 
 ## 📁 Featured Projects
 <!-- README_PROJECTS_START -->
