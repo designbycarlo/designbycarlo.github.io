@@ -1,8 +1,8 @@
 # Hi, I'm Carlo 👋
 
-Painting the web with HTML, CSS, and JavaScript.
+Crafting intelligent, AI-powered front-end experiences with HTML, CSS, JavaScript, and modern frameworks.
 
-I'm a web designer and developer passionate about creating beautiful, functional digital experiences. This repository is my portfolio showcase.
+I'm an AI Front end Engineer passionate about building beautiful, performant, and intelligent digital experiences. This repository is my portfolio showcase — where design meets AI-driven engineering.
 
 ## 🛠️ Tech Stack
 - **Languages:** HTML5, CSS3, JavaScript, TypeScript
@@ -34,4 +34,4 @@ I'm a web designer and developer passionate about creating beautiful, functional
 - **Twitter:** [@designbycarlo](https://x.com/designbycarlo)
 
 ## 📚 About This Repository
-This GitHub Pages site showcases my work in web design and development.
+This GitHub Pages site showcases my work as an AI Front end Engineer — blending design, development, and AI integration into polished, production-ready experiences.
