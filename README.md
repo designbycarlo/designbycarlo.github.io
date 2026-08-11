@@ -20,11 +20,11 @@ I'm an AI Front end Engineer passionate about building beautiful, performant, an
 
 ## 📁 Featured Projects
 <!-- README_PROJECTS_START -->
-- [AuraChat](https://github.com/designbycarlo/aurachat) - A lightweight AI SEO / AEO analyzer that scores any page for AI-search readiness — Google AI Overview, Perplexity, and ChatGPT Search — with a clear grade and prioritized fixes.
-- [Hz Radio](https://github.com/designbycarlo/Hz) - A modern, polished web radio app built with Next.js 15, React 19, and Zustand. Discover and stream stations worldwide with smart auto-scan playback, geolocation discovery, and persistent favorites.
-- [Sprint Flow Kanban Board](https://github.com/designbycarlo/sprint-flow) - Drag. Drop. Done. A Kanban board with smooth @dnd-kit drag-and-drop, Supabase auth, PostgreSQL persistence with RLS, and full dark mode — keeping your sprint on track.
-- [RunReady Running App](https://github.com/designbycarlo/runready) - An intelligent running companion with an AI coach (Vercel AI SDK via OpenRouter) that delivers real-time, weather-aware verdicts from geolocation — Optimal, Caution, or Avoid.
-- [MC Garmin FR55 Clock](https://github.com/designbycarlo/mc-garmin-fr55-clock) - A clean, dark high-contrast minimalist watch face for Garmin MIP displays, with ultra-large time, battery status, and an ambient sleep mode for maximum battery endurance.
+- [Aurachat](https://github.com/designbycarlo/aurachat) - A lightweight, self-hosted AI SEO & AEO readiness analyzer that scores your site for engines like Google AI Overview, Perplexity, and ChatGPT.
+- [Hz](https://github.com/designbycarlo/Hz) - Feature-rich web radio application with live streaming, auto-scan recovery, and geolocation station discovery.
+- [Sprint Flow](https://github.com/designbycarlo/sprint-flow) - Drag. Drop. Done. — A high-performance Kanban board with real-time sync, dark mode, and secure authentication.
+- [Runready](https://github.com/designbycarlo/runready) - Your intelligent running companion — real-time, weather-aware coaching in the browser powered by Next.js and OpenRouter.
+- [Mc Garmin Fr55 Clock](https://github.com/designbycarlo/mc-garmin-fr55-clock) - MinimalistFace — A sleek, battery-optimized Garmin Connect IQ watch face with a prominent Archivo typography clock layout.
 <!-- README_PROJECTS_END -->
 
 ## 📫 Get in Touch

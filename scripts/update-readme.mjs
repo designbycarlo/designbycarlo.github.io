@@ -26,7 +26,15 @@ async function extractProjects() {
     const desc = block.match(/<p class="mt-2[\s\S]*?>([\s\S]*?)<\/p>/);
     if (!title) continue;
     const description = desc
-      ? desc[1].replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim()
+      ? desc[1]
+          .replace(/<[^>]+>/g, "")
+          .replace(/&amp;/g, "&")
+          .replace(/&lt;/g, "<")
+          .replace(/&gt;/g, ">")
+          .replace(/&quot;/g, '"')
+          .replace(/&#39;/g, "'")
+          .replace(/\s+/g, " ")
+          .trim()
       : "";
     projects.push({
       repo: repo[1],
