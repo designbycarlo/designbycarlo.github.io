@@ -43,6 +43,11 @@ const TOPIC_LABELS = {
   minimalist: "Minimalist",
   vitest: "Vitest",
   eslint: "ESLint",
+  "ai-sdk": "AI SDK",
+  "gemini-ai": "Gemini AI",
+  healthcare: "Healthcare",
+  "medical-chatbot": "Medical Chatbot",
+  vite: "Vite",
 };
 
 async function gh(path, token) {
