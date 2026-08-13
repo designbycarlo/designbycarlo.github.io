@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+# Regenerate the auto-updated README.md sections from the current codebase,
+# and stage the result so every commit ships with a fresh README.
+node scripts/update-readme.mjs
+
+if ! git diff --quiet README.md; then
+  git add README.md
+fi
