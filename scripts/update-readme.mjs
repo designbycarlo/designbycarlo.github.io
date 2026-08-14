@@ -20,7 +20,7 @@ async function extractProjects() {
 
   for (const card of cards) {
     const block = card[0];
-    const repo = block.match(/href="(https:\/\/github\.com\/[^"]+)"/);
+    const repo = block.match(/href="(https:\/\/(?:github|gitlab)\.com\/[^"]+)"/);
     if (!repo) continue;
     const title = block.match(/class="font-semibold[^"]*"[^>]*>([^<]+)<\/a>/);
     const desc = block.match(/<p class="mt-2[\s\S]*?>([\s\S]*?)<\/p>/);

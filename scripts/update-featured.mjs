@@ -48,7 +48,23 @@ const TOPIC_LABELS = {
   healthcare: "Healthcare",
   "medical-chatbot": "Medical Chatbot",
   vite: "Vite",
+  ai: "AI",
+  "ai-news": "AI News",
+  "gitlab-pages": "GitLab Pages",
+  "machine-learning": "Machine Learning",
 };
+
+const MANUAL_PROJECTS = [
+  {
+    name: "ai-folio.gitlab.io",
+    title: "AI Folio",
+    description:
+      "A personal blog and portfolio tracking the fast-moving world of AI — covering daily news, hands-on tool reviews, and industry trends.",
+    html_url: "https://gitlab.com/ai-folio/ai-folio.gitlab.io",
+    homepage: "https://ai-folio.gitlab.io",
+    topics: ["ai", "ai-news", "gitlab-pages", "machine-learning"],
+  },
+];
 
 async function gh(path, token) {
   const res = await fetch(`${API}${path}`, {
@@ -112,7 +128,7 @@ function escapeHtml(value) {
 
 function card(repo, index) {
   const number = String(index + 1).padStart(2, "0");
-  const title = humanizeName(repo.name);
+  const title = repo.title || humanizeName(repo.name);
   const homepage = repo.homepage && repo.homepage.trim() ? repo.homepage.trim() : repo.html_url;
   const desc = truncate(repo.description, MAX_DESC);
   const tech = (repo.topics || [])
@@ -178,13 +194,19 @@ async function main() {
   );
 
   const skipped = [];
-  const cards = detailed
-    .filter((r) => {
-      const has = r.description && r.description.trim();
-      if (!has) skipped.push(r.name);
-      return has;
-    })
-    .map(card);
+  const auto = detailed.filter((r) => {
+    const has = r.description && r.description.trim();
+    if (!has) skipped.push(r.name);
+    return has;
+  });
+
+  const manualCards = MANUAL_PROJECTS.filter(
+    (r) => r.description && r.description.trim()
+  ).map((r, i) => card(r, i));
+
+  const autoCards = auto.map((r, i) => card(r, manualCards.length + i));
+
+  const cards = [...manualCards, ...autoCards];
 
   if (!cards.length) {
     console.warn(
