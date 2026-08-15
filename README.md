@@ -20,7 +20,7 @@ I'm an AI Front end Engineer passionate about building beautiful, performant, an
 
 ## 📁 Featured Projects
 <!-- README_PROJECTS_START -->
-- [AI Folio](https://gitlab.com/ai-folio/ai-folio.gitlab.io) - A personal blog and portfolio tracking the fast-moving world of AI — covering daily news, hands-on tool reviews, and industry trends.
+- [AI Folio](https://gitlab.com/ai-folio/ai-folio.gitlab.io) - a terminal-native ai journal covering foundation models, news, architecture, and trending repositories auto-fetched from arxiv · huggingface · github.
 - [Nova](https://github.com/designbycarlo/nova) - Nova is a medical chat agent that listens, guides, and cares. Features include a Gemini AI engine, weather-aware check-ins, and an installable PWA.
 - [Aurachat](https://github.com/designbycarlo/aurachat) - A lightweight, self-hosted AI SEO & AEO readiness analyzer that scores your site for engines like Google AI Overview, Perplexity, and ChatGPT.
 - [Hz](https://github.com/designbycarlo/Hz) - Feature-rich web radio application with live streaming, auto-scan recovery, and geolocation station discovery.
