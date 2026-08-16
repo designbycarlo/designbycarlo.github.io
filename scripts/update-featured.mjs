@@ -59,10 +59,10 @@ const MANUAL_PROJECTS = [
     name: "ai-folio.gitlab.io",
     title: "AI Folio",
     description:
-      "A personal blog and portfolio tracking the fast-moving world of AI — covering daily news, hands-on tool reviews, and industry trends.",
+      "A terminal-native AI journal covering foundation models, news, architecture, and trending repositories — auto-fetched from arxiv, Hugging Face, and GitHub.",
     html_url: "https://gitlab.com/ai-folio/ai-folio.gitlab.io",
     homepage: "https://ai-folio.gitlab.io",
-    topics: ["ai", "ai-news", "gitlab-pages", "machine-learning"],
+    topics: ["ai", "ai-news", "arxiv", "huggingface"],
   },
 ];
 
