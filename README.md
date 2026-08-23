@@ -21,8 +21,8 @@ I'm an AI Front end Engineer passionate about building beautiful, performant, an
 ## 📁 Featured Projects
 <!-- README_PROJECTS_START -->
 - [AI Folio](https://gitlab.com/ai-folio/ai-folio.gitlab.io) - A terminal-native AI journal covering foundation models, news, architecture, and trending repositories — auto-fetched from arxiv, Hugging Face, and GitHub.
-- [Nova](https://github.com/designbycarlo/nova) - Nova is a medical chat agent that listens, guides, and cares. Features include a Gemini AI engine, weather-aware check-ins, and an installable PWA.
 - [Aurachat](https://github.com/designbycarlo/aurachat) - A lightweight, self-hosted AI SEO & AEO readiness analyzer that scores your site for engines like Google AI Overview, Perplexity, and ChatGPT.
+- [Nova](https://github.com/designbycarlo/nova) - Nova is a medical chat agent that listens, guides, and cares. Features include a Gemini AI engine, weather-aware check-ins, and an installable PWA.
 - [Hz](https://github.com/designbycarlo/Hz) - Feature-rich web radio application with live streaming, auto-scan recovery, and geolocation station discovery.
 - [Sprint Flow](https://github.com/designbycarlo/sprint-flow) - Drag. Drop. Done. — A high-performance Kanban board with real-time sync, dark mode, and secure authentication.
 - [Runready](https://github.com/designbycarlo/runready) - Your intelligent running companion — real-time, weather-aware coaching in the browser powered by Next.js and OpenRouter.
