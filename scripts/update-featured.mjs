@@ -41,6 +41,9 @@ const TOPIC_LABELS = {
   "kanban-board": "Kanban Board",
   "project-management": "Project Management",
   minimalist: "Minimalist",
+  "telegram-bot": "Telegram Bot",
+  "cloudflare-workers": "Cloudflare Workers",
+  "serverless-ai": "Serverless AI",
   vitest: "Vitest",
   eslint: "ESLint",
   "ai-sdk": "AI SDK",
@@ -55,6 +58,15 @@ const TOPIC_LABELS = {
 };
 
 const MANUAL_PROJECTS = [
+  {
+    name: "ollichat.gitlab.io",
+    title: "OlliChat",
+    description:
+      "A friendly AI assistant that texts you back in Telegram and on the web. Powered by Cloudflare Workers AI — free, fast, and serverless.",
+    html_url: "https://gitlab.com/ollichat/ollichat.gitlab.io",
+    homepage: "https://ollichat.gitlab.io",
+    topics: ["ai", "telegram-bot", "cloudflare-workers", "serverless-ai"],
+  },
   {
     name: "ai-folio.gitlab.io",
     title: "AI Folio",

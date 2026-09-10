@@ -20,6 +20,7 @@ I'm an AI Front end Engineer passionate about building beautiful, performant, an
 
 ## 📁 Featured Projects
 <!-- README_PROJECTS_START -->
+- [OlliChat](https://gitlab.com/ollichat/ollichat.gitlab.io) - A friendly AI assistant that texts you back in Telegram and on the web. Powered by Cloudflare Workers AI — free, fast, and serverless.
 - [AI Folio](https://gitlab.com/ai-folio/ai-folio.gitlab.io) - A terminal-native AI journal covering foundation models, news, architecture, and trending repositories — auto-fetched from arxiv, Hugging Face, and GitHub.
 - [Nova](https://github.com/designbycarlo/nova) - Nova is a medical chat agent that listens, guides, and cares. Features include a Gemini AI engine, weather-aware check-ins, and an installable PWA.
 - [Aurachat](https://github.com/designbycarlo/aurachat) - A lightweight, self-hosted AI SEO & AEO readiness analyzer that scores your site for engines like Google AI Overview, Perplexity, and ChatGPT.
