@@ -59,6 +59,15 @@ const TOPIC_LABELS = {
 
 const MANUAL_PROJECTS = [
   {
+    name: "tckr",
+    title: "Tickr",
+    description:
+      "An AI assistant chatbot accessible via Telegram and web — free, no sign-up, always online. Powered by Cloudflare Workers AI with short-term conversation history.",
+    html_url: "https://github.com/devbycarlo/tckr",
+    homepage: "https://tickr-io.web.app/",
+    topics: ["javascript", "pwa", "ai", "timer"],
+  },
+  {
     name: "ollichat.gitlab.io",
     title: "OlliChat",
     description:
