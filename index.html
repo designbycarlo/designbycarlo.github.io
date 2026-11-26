@@ -19,6 +19,14 @@
 			document.documentElement.classList.remove('dark');
 		}
 	</script>
+	<script>
+		// Mark local environments so dev-only UI (e.g. My Cv) stays out of production.
+		const host = window.location.hostname;
+		const isDev = window.location.protocol === 'file:' ||
+			host === 'localhost' || host === '127.0.0.1' || host === '[::1]' ||
+			host.endsWith('.local') || host.endsWith('.test');
+		if (isDev) document.documentElement.classList.add('is-dev');
+	</script>
 	<style type="text/tailwindcss">
 		/* Configure Tailwind v4 to use the .dark class for dark mode */
 		@variant dark (.dark &);
@@ -34,6 +42,9 @@
 		/* Hide scrollbar for gallery while keeping functionality */
 		.hide-scrollbar::-webkit-scrollbar { display: none; }
 		.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+		/* Hidden everywhere except local development (html.is-dev is set above). */
+		html:not(.is-dev) .dev-only { display: none; }
 	</style>
 </head>
 
@@ -417,7 +428,7 @@
 					Twitter ↗
 				</a>
 				<a href="https://drive.google.com/file/d/1cCBpSneDvju_nJU7azy-VhhpMMIkNG0J/view" target="_blank" rel="noreferrer"
-					class="inline-flex items-center justify-center sm:justify-start gap-2 px-4 py-2.5 text-sm font-medium text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 underline underline-offset-2 decoration-zinc-300 dark:decoration-zinc-700 transition-colors">
+					class="dev-only inline-flex items-center justify-center sm:justify-start gap-2 px-4 py-2.5 text-sm font-medium text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 underline underline-offset-2 decoration-zinc-300 dark:decoration-zinc-700 transition-colors">
 					My Cv ↗
 				</a>
 				</div>
