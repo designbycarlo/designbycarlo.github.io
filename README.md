@@ -20,7 +20,7 @@ I'm an AI Front end Engineer passionate about building beautiful, performant, an
 
 ## 📁 Featured Projects
 <!-- README_PROJECTS_START -->
-- [Tickr](https://github.com/devbycarlo/tckr) - An AI assistant chatbot accessible via Telegram and web — free, no sign-up, always online. Powered by Cloudflare Workers AI with short-term conversation history.
+- [Tickr](https://github.com/devbycarlo/tckr) - A full-screen countdown timer PWA that parses natural language into staggered timers, with optional AI duration lookup and zero build step.
 - [OlliChat](https://gitlab.com/ollichat/ollichat.gitlab.io) - A friendly AI assistant that texts you back in Telegram and on the web. Powered by Cloudflare Workers AI — free, fast, and serverless.
 - [AI Folio](https://gitlab.com/ai-folio/ai-folio.gitlab.io) - A terminal-native AI journal covering foundation models, news, architecture, and trending repositories — auto-fetched from arxiv, Hugging Face, and GitHub.
 - [Hz](https://github.com/designbycarlo/Hz) - Feature-rich web radio application with live streaming, auto-scan recovery, and geolocation station discovery.

@@ -62,7 +62,7 @@ const MANUAL_PROJECTS = [
     name: "tckr",
     title: "Tickr",
     description:
-      "An AI assistant chatbot accessible via Telegram and web — free, no sign-up, always online. Powered by Cloudflare Workers AI with short-term conversation history.",
+      "A full-screen countdown timer PWA that parses natural language into staggered timers, with optional AI duration lookup and zero build step.",
     html_url: "https://github.com/devbycarlo/tckr",
     homepage: "https://tickr-io.web.app/",
     topics: ["javascript", "pwa", "ai", "timer"],
